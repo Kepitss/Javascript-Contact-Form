@@ -17,12 +17,13 @@
 			</div>
 
 			<form class="my-form" id="my-form" action="https://formspree.io/f/xnqlovaj" method="POST">
-				<label>Vārds:</label>
+				<label>Lietotājvārds:</label>
 				<input
 					type="text"
 					name="_name"
+					id="username"
 					class="username"
-					placeholder="vārds..."
+					placeholder="lietotājvārds..."
 					autocomplete="off"
 				/>
 				<p id="username-error-msg"></p>
@@ -32,6 +33,7 @@
 					type="email"
 					name="_replyto"
 					class="email"
+					id="email"
 					autocomplete="off"
 					aria-autocomplete="off"
 					placeholder="e-pasts..."
@@ -42,13 +44,14 @@
 				<textarea
 					name="message"
 					class="message"
+					id="message"
 					rows="5"
 					placeholder="tava ziņa..."
 					autocomplete="off"
 				></textarea>
 				<p id="message-error-msg"></p>
 
-				<button type="submit" class="my-form-button">Sūtīt ziņu</button>
+				<button type="submit" class="my-form-button" id="my-form-button">Sūtīt ziņu</button>
 			</form>
 		</div>
 
