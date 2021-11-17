@@ -15,6 +15,41 @@
 			<div class="heading">
 				<h1>Sūtīt e-pastu<span class="loading"></span></h1>
 			</div>
+
+			<form class="my-form" id="my-form" action="https://formspree.io/f/xnqlovaj" method="POST">
+				<label>Vārds:</label>
+				<input
+					type="text"
+					name="_name"
+					class="username"
+					placeholder="vārds..."
+					autocomplete="off"
+				/>
+				<p id="username-error-msg"></p>
+
+				<label>E<span>-</span>pasts:</label>
+				<input
+					type="email"
+					name="_replyto"
+					class="email"
+					autocomplete="off"
+					aria-autocomplete="off"
+					placeholder="e-pasts..."
+				/>
+				<p id="email-error-msg"></p>
+
+				<label>Tava ziņa:</label>
+				<textarea
+					name="message"
+					class="message"
+					rows="5"
+					placeholder="tava ziņa..."
+					autocomplete="off"
+				></textarea>
+				<p id="message-error-msg"></p>
+
+				<button type="submit" class="my-form-button">Sūtīt ziņu</button>
+			</form>
 		</div>
 
 		<script src="./js/formValidation.js"></script>

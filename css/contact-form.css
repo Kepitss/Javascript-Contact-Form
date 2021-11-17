@@ -1,1 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
+/* Basic styling */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #210070;
+}
+
+.form-container {
+	width: 35vw;
+}
+
+/* Heading */
+.heading {
+	width: 100%;
+	text-align: center;
+	padding: 1vw;
+}
+.heading h1 {
+	font-family: "Syne Mono", monospace;
+	font-size: 3vw;
+	color: #fff;
+}
+.heading h1 span {
+	position: absolute;
+}
+
+/* Form */
+.my-form {
+	width: 100%;
+	padding: 0.5vw 2vw 2vw 2vw;
+	border-radius: 0.25vw;
+	background-color: #213970;
+}
+
+/* Form label */
+.my-form label {
+	font-family: monospace, sans-serif;
+	font-size: 1.3vw;
+	color: #fff;
+	display: inline-block;
+	margin-top: 1.5vw;
+	padding-left: 0.3vw;
+}
+.my-form label span {
+	font-family: "Roboto", sans-serif;
+}
+
+/* Form input fields */
+.my-form input,
+.my-form textarea {
+	width: 100%;
+	padding: 0.4vw 0.6vw;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.3vw;
+	font-weight: 300;
+	outline: none;
+	border: 0.15vw solid #fff;
+	color: #000;
+	border-radius: 0.25vw;
+	resize: none;
+	margin-bottom: 0.1vw;
+}
+
+.my-form input::placeholder,
+.my-form textarea::placeholder {
+	color: grey;
+	font-weight: 100;
+}
+
+/* Form submit button */
+.my-form-button {
+	width: 100%;
+	margin-top: 1.5vw;
+	padding: 0.6vw;
+	font-size: 1.3vw;
+	font-family: monospace, sans-serif;
+	font-weight: bold;
+	border-radius: 0.25vw;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	transition: 0.3s ease-out;
+}
+.my-form-button:hover {
+	background-color: rgb(223, 221, 221);
+}
+.my-form-button:active {
+	background-color: rgb(3, 250, 3);
+}
+
+/* Error messages */
+#username-error-msg,
+#email-error-msg,
+#message-error-msg {
+	position: absolute;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.1vw;
+	color: #e20606;
+	padding-left: 0.5vw;
+}
+.username.error,
+.email.error,
+.message.error {
+	border: 0.15vw solid #e20606;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+	.form-container {
+		width: 70vw;
+	}
+
+	/* Heading */
+	.header {
+		padding: 2vw;
+	}
+	.heading h1 {
+		font-size: 6vw;
+	}
+
+	/* Form */
+	.my-form {
+		padding: 1vw 4vw 4vw 4vw;
+	}
+
+	/* Form label */
+	.my-form label {
+		font-size: 2.6vw;
+		margin-top: 3vw;
+		padding-left: 0.6vw;
+	}
+
+	/* Form input fields */
+	.my-form input,
+	.my-form textarea {
+		padding: 0.8vw 1.2vw;
+		font-size: 2.6vw;
+		margin-bottom: 0.2vw;
+	}
+
+	/* Form submit button */
+	.my-form-button {
+		margin-top: 3vw;
+		padding: 1.2vw;
+		font-size: 2.6vw;
+	}
+
+	/* Error messages */
+	#username-error-msg,
+	#email-error-msg,
+	#message-error-msg {
+		font-size: 2.2vw;
+		padding-left: 1vw;
+	}
+}
+
+@media (max-width: 600px) {
+	.form-container {
+		width: 95vw;
+	}
+
+	/* Heading */
+	.header {
+		padding: 3vw;
+	}
+	.heading h1 {
+		font-size: 9vw;
+	}
+
+	/* Form */
+	.my-form {
+		padding: 1.5vw 6vw 6vw 6vw;
+	}
+
+	/* Form label */
+	.my-form label {
+		font-size: 3.9vw;
+		margin-top: 4.5vw;
+		padding-left: 0.9vw;
+	}
+
+	/* Form input fields */
+	.my-form input,
+	.my-form textarea {
+		padding: 1.2vw 1.8vw;
+		font-size: 3.9vw;
+		margin-bottom: 0.3vw;
+	}
+
+	/* Form submit button */
+	.my-form-button {
+		margin-top: 4.5vw;
+		padding: 1.8vw;
+		font-size: 3.9vw;
+	}
+
+	/* Error messages */
+	#username-error-msg,
+	#email-error-msg,
+	#message-error-msg {
+		font-size: 3.3vw;
+		padding-left: 1.5vw;
+	}
+}
