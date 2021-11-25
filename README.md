@@ -3,11 +3,11 @@
 ###### Live project is [here](https://martinskepits.lv/projects/contact_form/index.html)
 
 ## Description
-Fully functional Contact Form with validation witch can send real email.
+Fully functional Contact Form with validation wich can send real email.
 
 Thanks :grin:
 
-## Technologys used
+## Technologies used
 - HTML
 - CSS
 - Javascript
