@@ -1,5 +1,5 @@
 # Javascript Contact Form
-[![JavaScript Contact Form](https://github.com/Kepitss/Javascript-Contact-Form/blob/main/README-IMG.png?raw=true)](https://martinskepits.lv/projects/contact_form/index.html) 
+[![JavaScript Contact Form](https://github.com/Kepitss/Javascript-Contact-Form/blob/main/README-IMG.png?raw=true)](https://javascript-contact-form.netlify.app/) 
 ###### Live project is [here](https://javascript-contact-form.netlify.app/)
 
 ## Description
